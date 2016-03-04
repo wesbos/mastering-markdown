@@ -1,10 +1,8 @@
-![](http://wes.io/ce2H/content)
+[![](https://s3.amazonaws.com/f.cl.ly/items/2j1V113N3f38381D023Y/share@1x.png)](http://masteringmarkdown.com)
 
-# What The Flexbox Website → [MasteringMarkdown.com](http://MasteringMarkdown.com)
+# Mastering Markdown Website → [MasteringMarkdown.com](http://masteringmarkdown.com)
 
-This is the website I use to run MasteringMarkdown.com - it's a mix of jQuery from the [Command Line Power User](https://github.com/wesbos/Command-Line-Power-User) site while the viewer is built in React. 
-
-If you are looking for the course exercises, they are here → <https://github.com/wesbos/what-the-flexbox>
+This is just the tech behind the Mastering Markdown Site. The viewer is built in React.js
 
 ## To install
 
@@ -13,3 +11,4 @@ $ `npm install`
 ## To Run
 
 $ `gulp`
+
