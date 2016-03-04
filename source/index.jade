@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  header.top
+    h1
+      a(href="http://MasteringMarkdown.com")
+        span Mastering
+        br
+        span Markdown
+
+    p.desc
+      | A Mini Series that will change how you write&nbsp;
+      span.options
+        span.active documentation
+        span blog posts
+        span meeting notes
+        span emails
+        span books
+        span GitHub comments
+        span Slack responses
+        span forum posts
+
+    form.signup(method="POST")
+      img.laptop(src="/images/laptop.png")
+      p.underline
+      label(for="email")
+      input(type="email" name="email" placeholder="Email Address")
+      //- input(type="submit" value="Get videos + exercises")
+      input(type="submit" value="Start the Course!")
+      p.details
+        | Get access to all 20 videos and download the exercises!
+      p.details You will be # <span class="sub-count">37,000+</span> to learn with Wes Bos!
+
+    video.fullscreen(src="https://www.dropbox.com/s/31cepuxcqop27c9/Typer.mp4?dl=1" loop muted autoplay)
+
+    section.social
+      a(href="https://twitter.com/share" class="twitter-share-button" data-url="http://MasteringMarkdown.com" data-text="What The FlexBox?! A new video course by @wesbos → " data-related="wesbos") Tweet
+      a(href="https://twitter.com/wesbos" class="twitter-follow-button" data-show-count="true") Follow @wesbos
+      div(class="fb-like" data-href="http://MasteringMarkdown.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false") Like
+      g:plusone()
+
+
+  .about
+    .half
+      h3 What is this?
+      p A quick <strong>34 minute</strong> mini course for anyone who is looking to learn markdown for the first time, or fill in any gaps along the way. Markdown is a very simple language and can be easily mastered in under an hour.
+
+    .half
+      h3 Who is Wes Bos?
+      p
+        img(src="https://pbs.twimg.com/profile_images/623184294521929728/LUJ4qL8n.jpg" class="handsome")
+        | <a href="http://wesbos.com">Wes Bos</a> is a fullstack developer and educator from Hamilton, Canada. Wes loves to break down complex topics into short, tasty, little tutorials. He has contributed to Smashing Magazine, CSS Tricks and NetMag as well as released <a href="https://ReactForBeginners.com">React For Beginners</a>, <a href="http://SublimeTextBook.com">Sublime Text Power User</a>, <a href="http://flexbox.io">FlexBox.io</a and <a href="http://commandlinepoweruser.com">Command Line Power User</a>.
+
+  section.the-videos
+  .watch-wrap
+    h3 The Videos
+    #watch
+
+  //- .reviews
+    h3 Some nice things people have said
+
+    .tweets
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Just finished the excellent <a href="https://t.co/wlRIDd3IQf">https://t.co/wlRIDd3IQf</a> videos by <a href="https://twitter.com/wesbos">@wesbos</a>. If you hate CSS float hacks you will love FlexBox. Thanks Wes!</p>&mdash; Chris Sears (@csears) <a href="https://twitter.com/csears/status/689812549320179712">January 20, 2016</a></blockquote>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Just finished What The Flexbox. Even if you already know flexbox, watch and you&#39;ll know it better. Thanks <a href="https://twitter.com/wesbos">@wesbos</a>! <a href="http://t.co/PkZ8qbSFAZ">http://t.co/PkZ8qbSFAZ</a></p>&mdash; Chris Coleman (@freshyill) <a href="https://twitter.com/freshyill/status/650101666306486273">October 3, 2015</a></blockquote>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/wesbos">@wesbos</a> for creating an amazing + free <a href="https://twitter.com/hashtag/flexbox?src=hash">#flexbox</a> tutorial! I went through it in one night + totally get it: <a href="http://t.co/NFoetljedk">http://t.co/NFoetljedk</a></p>&mdash; Moya (@moyamiller) <a href="https://twitter.com/moyamiller/status/648874999479201792">September 29, 2015</a></blockquote>
+      <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p lang="en" dir="ltr">For any Front End Dev FlexBox mastery is a must. Do yourself a favor &amp; check out <a href="http://t.co/6D179vXY2W">http://t.co/6D179vXY2W</a> from <a href="https://twitter.com/wesbos">@wesbos</a> <a href="https://twitter.com/hashtag/css?src=hash">#css</a> <a href="https://twitter.com/hashtag/webdevelopment?src=hash">#webdevelopment</a></p>&mdash; Mike Lawrence (@MikeTLawrence) <a href="https://twitter.com/MikeTLawrence/status/646522021564837888">September 23, 2015</a></blockquote>
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -1,0 +1,526 @@
+blue = #2376AE
+yellow  = #DBFF05
+purple = #C16ECF
+black = #000000
+alpha = 0.7
+gradient = linear-gradient(134deg, rgba(48, 35, 174,alpha) 0%, rgba(72, 194, 165,alpha) 51%, rgba(137, 78, 198,alpha) 59%, rgba(200, 109, 215,alpha) 100%);
+
+@import '_normalize'
+@import '_typography'
+
+body
+  font-family sans-serif
+  -webkit-font-smoothing: antialiased;
+
+
+h1,h2,h3,h4,h5, h6
+  font-weight normal
+  margin 0
+
+html
+  font-size 10px
+
+h1
+  font-size 5rem
+
+a
+  cursor pointer
+
+p
+  font-size 1.8rem
+  a
+    color white
+    text-decoration none
+    transition all 0.2s
+    position relative
+    color black
+
+
+img
+  max-width 100%
+
+h1
+  font-size 15rem
+  padding 0
+  line-height 1.15
+  perspective 500px
+  span
+    display inline-block
+    position relative
+    z-index 2
+    transition all 0.35s
+    &:after
+      content ''
+      display block
+      background yellow
+      height 40%
+      position absolute
+      top 33%
+      width 100%
+      z-index -1
+      transform rotate(2deg) skew(-5deg)
+    &:first-child
+      transform translateX(-14%)
+      // transform-origin: 100% 0;
+      // transform rotateY(15deg)
+    &:last-child
+      transform translateX(17%)
+      // transform-origin 0 100%
+      // transform rotateY(-15deg)
+  &:hover
+    span:first-child
+      transform rotateY(15deg) rotateX(-20deg)
+    span:last-child
+      transform rotateY(-15deg) rotateX(20deg)
+  a
+    color black
+    text-shadow 1px 1px 0 alpha(yellow,40%)
+    text-decoration none
+
+.desc
+  font-size 18px
+  line-height 1.6
+  letter-spacing 1px
+  display inline-block
+  position relative
+  color black
+  z-index 2;
+  line-height 1
+  &:before
+    content ''
+    display block
+    height 10px
+    width 100%
+    background alpha(yellow,100%)
+    position absolute
+    bottom 2px
+    z-index -1
+
+header.top
+  border-top 1rem solid alpha(yellow, 5%)
+  text-align center
+  background gradient
+  color white
+  padding 4rem 0 2rem 0
+  transition all 0.1s
+  position relative
+  overflow hidden
+  &:before
+    content ''
+    background url(../images/typer.jpg)
+    background-size cover
+    position absolute
+    left 0
+    right 0
+    top 0
+    bottom 0
+    z-index -1
+
+.options
+  background rgba(0,0,0,0.1)
+  display inline-block
+  width 200px
+  span
+    display none
+    &.active
+      display inline
+
+// video bg
+.fullscreen
+  position absolute
+  width 100%
+  height 100%
+  top 0
+  left 0
+  z-index -1
+  object-fit cover
+
+
+.scaler
+  width 100%
+  position relative
+  padding-bottom: 56.25%
+  iframe
+    width 100%
+    height 100%
+    position absolute
+    top 0
+    bottom 0
+    right 0
+    left 0
+
+grey = #CBCBCB
+
+.videos
+  display flex
+  flex-wrap wrap
+  margin 50px 0
+  border-radius 3px
+  border 1px solid grey
+  width 100%
+
+.video
+  flex 1
+  display flex
+  flex-basis 50%
+  width 100%
+  background white
+  border-right 1px solid grey
+  &:last-child a
+    border-bottom 0
+  p
+    margin 0
+    clear both
+    color black
+    font-size 15px
+  span.video-number
+    padding 10px
+    font-size 15px
+    flex-basis 50px
+    text-align center
+    align-self center
+    color darken(grey,30%)
+    font-weight 100
+  a
+    border-bottom 1px solid grey
+    border-left 1px solid grey
+    padding 30px
+    flex 1
+    cursor pointer
+  img
+    float left
+    margin-right 10px
+    width: 140px;
+    height: auto;
+  h2
+    color black
+    font-size 17px
+    line-height: 1.6;
+    margin-top: -2px;
+    text-transform uppercase
+    font-family 'adam'
+    .duration
+      font-size 10px
+      background lighten(grey ,70%)
+      padding 2px 5px
+      position relative
+      top -3px
+      margin-left 5px
+      color:rgba(0,0,0,0.5)
+      border-radius 4px
+
+.video-details
+  background rgba(0,0,0,0.2)
+  padding 20px
+  margin-bottom 20px
+  color white
+  h2
+    font-size 30px
+    font-family: 'adam';
+  p
+    font-size 15px
+    margin-bottom 0
+
+
+.about
+  padding 3rem 0
+  overflow hidden
+  max-width 1200px
+  margin 0 auto
+  display flex
+  flex-wrap wrap
+  p
+    font-family sans-serif
+  .half
+    flex-basis 50%
+    &:first-of-type
+      padding-right 20px
+    &:last-of-type
+      padding-left 20px
+
+  p
+    line-height 1.3
+    margin-top 0
+  h3
+    font-size 25px
+    &:before
+      bottom -5px
+      padding 2rem
+  img
+    display block
+    margin 0 auto
+    width 100px
+    float left
+    margin-right 1rem
+    // border-radius 50%
+
+.examples, .the-videos
+  text-align center
+  clear both
+
+.example-figures
+  margin 0 auto
+  max-width 1200px
+  // display flex
+  clear both
+  // align-items center
+  figure
+    // flex-baiss 33.33%
+    width:calc(33.33% - 40px);
+    float left
+    margin:20px
+    padding:10px
+    border-radius 4px
+    background rgba(0,0,0,0.2)
+    text-align center
+    font-size 15px
+    color white
+  figcaption
+    padding-top 5px
+h3
+  text-align center
+  text-transform uppercase
+  margin-bottom 2rem
+
+.video-title
+  font-size 1.5rem
+  margin 0
+  text-transform uppercase
+  counter-increment video
+  text-align left
+  &:before
+    counter(video, decimal-leading-zero)
+
+.video
+  p
+    margin-top 0
+    line-height 1.8
+
+
+section.deets
+  text-align center
+  // border-bottom 1px solid blue
+  background darken(white, 3%)
+  // margin-bottom 4rem
+  overflow hidden
+  padding-top 5rem
+  padding-bottom 1rem
+  &.secondary
+    padding-top 2rem
+  p
+    font-size 3rem
+    max-width 80rem
+    margin 0 auto
+    line-height 1.5
+    &.naw
+      font-size 14px
+      clear both
+      padding-top 1rem
+
+
+.signup
+  max-width 60rem
+  margin 2rem auto 1rem auto
+  background rgba(0,0,0,0.2)
+  padding:20px;
+  border-radius 5px
+  box-shadow inset 0 0 2px rgba(0,0,0,0.2)
+  position relative
+  .laptop
+    position: absolute;
+    width: 310px;
+    left: -160px;
+    bottom: -10px;
+  p
+    margin 0
+    padding-top 20px
+    clear both
+    font-size 16px
+    & + p
+      padding-bottom 20px
+  input
+    background white
+    line-height 2
+    padding 1rem
+    font-size 2rem
+    border 0
+    outline 0
+    float left
+    &[type="email"]
+      width 60%
+    &[type="submit"]
+      width 40%
+      background yellow
+      color alpha(black, 0.9)
+
+section.social
+  text-align center
+  padding 2rem
+  // border-bottom 1px solid lighten(grey, 90%)
+  margin-bottom 2rem
+  .fb-like
+    position relative
+    top -3px
+    margin-right: 4rem;
+    margin-left: 3rem;
+  #___plusone_0
+    position relative
+    top 1px
+  #twitter-widget-0
+    margin-left 3rem
+
+
+p.desc.success
+  font-size 1.5rem
+  text-align center
+  padding-left 1rem
+  background rgba(0,0,0,0.2)
+  padding:10px;
+  border-radius 5px
+  box-shadow inset 0 0 2px rgba(0,0,0,0.2)
+  color white
+  line-height 1.4
+  margin 2rem
+  &:before
+    display none
+
+.deets
+  background yellow
+
+.twitter-tweet
+  display inline-block !important
+  margin 4rem 1rem 0 !important
+
+.watch-wrap
+  display flex
+  padding-top 5rem
+  padding-bottom 5rem
+  justify-content center
+  background gradient
+  background-attachment fixed
+  flex-wrap wrap
+  h3
+    width 100%
+    color white
+    font-size 10rem
+    text-shadow 2px 2px 0 alpha(black,5%)
+
+#watch
+  max-width 1200px
+  background rgba(0,0,0,0.2)
+  padding 50px
+  border-radius 4px
+
+footer
+  text-align center
+  color white
+  font-size 15px
+  padding:20px
+  a
+    color white
+    padding 10px
+    text-decoration none
+
+.underline
+  border-bottom 2px solid yellow
+  display inline-block
+  margin 0 auto
+  padding-bottom 10px
+  display none
+  max-width 800px
+
+.prev-and-next
+  display flex
+  justify-content space-between
+  margin-top 1rem
+  a
+    text-decoration none
+    background rgba(0,0,0,0.1)
+    color white
+    font-size 1.5rem
+    padding 1rem
+    max-width 49%
+
+.sub-count
+  border-bottom 1px solid yellow
+
+.reviews
+  margin-top 4rem
+  text-align center
+  .tweets
+    display flex
+    flex-wrap wrap
+    flex-basis 50%
+    align-items center
+    justify-content center
+
+@media all and (max-width:1200px)
+  #watch
+    padding 20px
+
+  .about
+    padding 20px
+
+@media all and (max-width:1000px)
+  img.laptop
+    display none
+  ul.video-list
+    padding 1rem
+    li
+      &:nth-child(1n)
+        width 32.5%
+        margin-right 1.25%
+      &:nth-child(3n+3)
+        margin-right 0
+
+@media all and (max-width:850px)
+  .desc:before
+    display none
+  h1
+    font-size 16vw
+  section.deets
+    p.desc
+      font-size 2rem
+  .signup
+    input
+      font-size 1.3rem
+      padding 0.5rem
+
+@media all and (max-width:760px)
+  .video
+    flex-basis 100%
+
+  .about
+    .half
+      flex-basis 100%
+      margin 10px 0
+      padding 0 !important
+    a
+      border-bottom 3px solid yellow
+      background alpha(blue, 2.5%)
+      line-height 1
+      // background gradient
+      // background-attachment fixed
+      // color white
+      // padding 0 2px
+      // border-radius 2px
+      // text-shadow 1px 2px 0 alpha(black,10%)
+
+@media all and (max-width:480px)
+  .video
+    a
+      padding 15px
+
+  .example-figures
+    figure
+      margin 5px 5px 20px 5px
+
+@media all and (max-width:420px)
+  .signup
+    input[type]
+      width 100%
+      text-align center
+      &:first-of-type
+        margin-bottom 5px
+
+
