@@ -82,7 +82,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 // Google Analytics
-ga('create', 'UA-65558692-1', 'auto');
+ga('create', 'UA-74635155-1', 'auto');
 ga('send', 'pageview');
 
 // Facebook Ads
