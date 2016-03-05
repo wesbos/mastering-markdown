@@ -120,7 +120,7 @@ const Viewer = React.createClass({
       <div className="viewer">
         <Player videoid={videoid} autoplay={autoplay}/>
         <div className="video-details">
-          <h2>{video.title} - {video.number} of {this.state.videos.length}</h2>
+          <h2>{video.title} - {video.number * 1 + 1} of {this.state.videos.length}</h2>
           {video.description ? <p>{video.description}</p> : null }
           {this.renderNavButtons()}
         </div>
