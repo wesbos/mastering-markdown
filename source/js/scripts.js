@@ -27,7 +27,8 @@ $(function() {
     });
 
     // send out the email
-    $.getJSON('http://wesbos.com/mc/send-markdown.php?callback=?&email=' + encodeURIComponent(email),function(res){
+
+    $.getJSON('https://reactforbeginners.com/api/course/'+encodeURIComponent(email)+'/MMD', function(res) {
       console.log(res);
     });
 
